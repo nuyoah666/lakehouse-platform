@@ -1,0 +1,41 @@
+# ========== Node.js ==========
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========== 环境配置（含敏感信息，不提交）==========
+backend/.env
+.env
+
+# ========== 调试文件（不提交）==========
+backend/payload.json
+backend/resume_payload.json
+frontend/_tmp.js
+ROADMAP.md
+
+# ========== 临时运行时文件 ==========
+/tmp/lakehouse_*.json
+/tmp/lakehouse_*.sql
+/tmp/lakehouse_*.out
+*.tmp
+
+# ========== Python 虚拟环境 ==========
+venv/
+__pycache__/
+*.pyc
+
+# ========== 系统文件 ==========
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========== IDE ==========
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ========== 日志 ==========
+*.log
+logs/
