@@ -1,0 +1,25 @@
+---
+name: "❓ Question / Help"
+description: "Ask a question or get help using the platform"
+title: "[QUESTION] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about using the Lakehouse Platform? Ask away!
+
+  - type: textarea
+    id: question
+    attributes:
+      label: "Your Question"
+      description: "What would you like to know?"
+      placeholder: "Describe your question in detail..."
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: "Environment (if relevant)"
+      placeholder: "e.g. Windows 10, Flink 1.20.1, etc."

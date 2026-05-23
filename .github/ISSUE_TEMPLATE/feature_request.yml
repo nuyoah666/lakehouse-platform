@@ -1,0 +1,61 @@
+---
+name: "✨ Feature Request"
+description: "Suggest a new feature or enhancement"
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea to make this project better? We'd love to hear it!
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem / Motivation"
+      description: "What problem are you trying to solve? Why is this feature needed?"
+      placeholder: "I'm trying to..., but currently I can't because..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed Solution"
+      description: "Describe your ideal solution or feature behavior"
+      placeholder: "It would be great if..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Area"
+      description: "Which part of the platform does this relate to?"
+      options:
+        - "Frontend - SQL Editor"
+        - "Frontend - Catalog Management"
+        - "Frontend - Job Management"
+        - "Frontend - Lineage / Monitoring"
+        - "Backend - Flink Integration"
+        - "Backend - Doris Integration"
+        - "Backend - Catalog / Metadata"
+        - "Deployment / WSL2 / Windows"
+        - "Documentation"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives Considered"
+      description: "Have you tried any workarounds? Are there other approaches?"
+      placeholder: "Optional..."
+
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: "Contribution"
+      options:
+        - label: "I'm willing to submit a PR for this feature"
